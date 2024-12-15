@@ -1,19 +1,28 @@
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return '''
-    <html>
-        <body>
-            <h1>Mi GIF Animado</h1>
-            <img src="https://camo.githubusercontent.com/de13789f58412421a12d5f0f3ab66ba9fbcd3dcf4cb850bdb4c6e612a05060cd/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f554547775943565442466139744a456636362f67697068792e676966">
-        </body>
-    </html>
-    '''
-if __name__ == '__main__':
-    app.run(debug=True)
-    
--->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrar GIF</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://camo.githubusercontent.com/de13789f58412421a12d5f0f3ab66ba9fbcd3dcf4cb850bdb4c6e612a05060cd/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f554547775943565442466139744a456636362f67697068792e676966" alt="GIF centrado">
+</body>
+</html>
 
 <h1 align="center">Hi 👋, I'm Jaqueline Levano</h1>
 <h3 align="center">Student of systems engineering</h3>
