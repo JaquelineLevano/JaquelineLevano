@@ -1,18 +1,18 @@
-## Hi there 👋
+app = Flask(__name__)
 
-<!--
-**JaquelineLevano/JaquelineLevano** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+@app.route('/')
+def home():
+    return '''
+    <html>
+        <body>
+            <h1>Mi GIF Animado</h1>
+            <img src="https://camo.githubusercontent.com/de13789f58412421a12d5f0f3ab66ba9fbcd3dcf4cb850bdb4c6e612a05060cd/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f554547775943565442466139744a456636362f67697068792e676966">
+        </body>
+    </html>
+    '''
+if __name__ == '__main__':
+    app.run(debug=True)
+    
 -->
 
 <h1 align="center">Hi 👋, I'm Jaqueline Levano</h1>
